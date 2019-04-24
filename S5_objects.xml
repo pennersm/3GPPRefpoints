@@ -1,0 +1,7 @@
+<entry name="h-eNB-S1C--1">
+  <ip-netmask>172.16.1.1/32</ip-netmask>
+  <description>eNB#1 CP S1 to MME#1</description>
+  <tag>
+    <member>BLACK</member>
+  </tag>
+</entry>

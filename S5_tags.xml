@@ -1,0 +1,8 @@
+<entry name="{{ OTAGn_h_SGW_S5 }}">
+  <color>{{ OTAGc_h_SGW_S5 }}</color>
+  <comments>HPLMN S5 - EPC Object</comments>
+</entry>
+<entry name="{{ OTAGn_h_PGW_S5 }}">
+  <color>{{ OTAGc_h_PGW_S5 }}</color>
+  <comments>HPLMN S5 - EPC Object</comments>
+</entry>

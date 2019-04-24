@@ -1,0 +1,145 @@
+# skillet preamble information used by panhandler
+# ---------------------------------------------------------------------
+# unique snippet name
+name: SP_RefConf_S8
+# label used for menu selection
+label: S5 Interface
+description: Reference config for 3GPP standard Reference Point S5
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+ collection:
+   - 3GPP Reference Points
+
+# end of preamble section
+
+# variables section
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+# ---------------------------------------------------------------------
+# S5_objects.xml:
+# ---------------------------------------------------------------------
+ - name: h_SGW_S5__
+   description: Name for HPLMN SGW NIC for S5 (add additional NICs from this or other SGWs manually via GUI)
+   default: 1
+   type_hint: text
+ - name: IP_h_SGW_S5__
+   description: IP address for HPLMN SGW NIC for S5 (add additional NICs from this or other SGWs manually via GUI)
+   default: 0.0.0.0/32
+   type_hint: ip_address
+# ---------------------------------------------------------------------
+# S5_zones.xml:
+# ---------------------------------------------------------------------
+ - name: ZONE_h_SGW_S5
+   description: Security Zone identifier name for HPLMN SGW NIC on S5
+   default: epc_blue
+   type_hint: text
+ - name: ZTYP_h_SGW_S5
+   description: Security Zone Type for HPLMN SGW NIC on S5
+   default: tap
+   type_hint: dropdown
+   dd_list:
+     - key: tap Mode
+       value: tap
+     - key: virtual wire
+       value: virtual-wire
+     - key: Layer 2
+       value: layer2
+     - key: Layer 3
+      value: layer3
+# ---------------------------------------------------------------------
+# S5_tags.xml:
+# ---------------------------------------------------------------------
+ - name: OTAGn_h_SGW_S5
+   description: Tag name for Objects in Security Zone for HPLMN SGW NIC on S5
+   default: blue
+   type_hint: text
+ - name: OTAGc_h_SGW_S5
+   description: Tag color for Objects in Security Zone for HPLMN SGW NIC on S5
+   default: blue
+   type_hint: dropdown
+   dd_list:
+     - key: blue
+       value: color17
+     - key: red
+       value: color1
+     - key: black
+       value: color38
+# ---------------------------------------------------------------------
+# ---------------------------------------------------------------------
+ - name: h_PGW_S5__
+   description: HPLMN PGW NIC for S5 (add additional NICs from this or other PGWs manually via GUI)
+   default: 1
+   type_hint: text
+# ---------------------------------------------------------------------
+ - name: ZONE_h_PGW_S5
+   description: Security Zone identifier name for HPLMN PGW NIC on S5
+   default: epc_blue
+   type_hint: text
+ - name: ZTYP_h_PGW_S5
+   description: Security Zone Type for HPLMN PGW NIC on S5
+   default: tap
+   type_hint: dropdown
+   dd_list:
+     - key: tap Mode
+       value: tap
+     - key: virtual wire
+       value: virtual-wire
+     - key: Layer 2
+       value: layer2
+     - key: Layer 3
+       value: layer3
+# ---------------------------------------------------------------------
+ - name: OTAGn_h_PGW_S5
+   description: Tag name for Objects in Security Zone for HPLMN PGW NIC on S5
+   default: blue
+   type_hint: text
+ - name: OTAGc_h_PGW_S5
+   description: Tag color for Objects in Security Zone for HPLMN PGW NIC on S5
+   default: blue
+   type_hint: dropdown
+   dd_list:
+     - key: blue
+       value: color17
+     - key: red
+       value: color1
+     - key: black
+       value: color38
+# ---------------------------------------------------------------------
+# end of variables section
+
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+ - name: S5_tags
+   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
+   file: S5_tags.xml
+
+ - name: S5_objects
+   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/address
+   file:  S5_objects.xml
+
+ - name: S5_zones
+   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
+   file: S5_zones.xml
+
+ - name: S5_rules
+   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security/rules
+   file: S5_rules.xml
+
+# - name: GTP_ll1
+#   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/profiles/gtp
+#   file: GTP--Common-log1.xml
+# ---------------------------------------------------------------------
+# end of snippets section
