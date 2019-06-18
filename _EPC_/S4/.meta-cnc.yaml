@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_S4_EPCv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for S4 between SGSN and SGW
+description: Reference Architecture for 3GPP Reference Point S4 between SGSN and SGW. Provides IP+App-ID level protection, GTP stateful inspection, GTP Message Type Filtering and selected GTP Messages Flooding Filter. Correlation with S1-U is provided if the S1-U rule from RAN Collection is applied.  
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__EPC
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

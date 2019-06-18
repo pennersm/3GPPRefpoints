@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_S1U_RANv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for S1-U between eNB and SGW
+description: Reference Architecture for 3GPP reference Point S1-U between eNB and SGW. Provides S1-U IP+App-ID level protection, Message-Type Filter and max. tunnels per GSN limit. For full GTP protection (stateful inspection and correlation with User Plane) add a rule for S11 e.g. under the EPC Reference Architectures collection.
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__RAN
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

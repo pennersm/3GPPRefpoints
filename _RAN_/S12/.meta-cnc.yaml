@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_S12_RANv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for S12 between DT RNC and SGW 
+description: Reference Architecture for 3GPP Reference Point S12 between RNC with Direct Tunneling Functionality and the SGW. Provides Provides S12IP+App-ID level protection, Message-Type Filter and max. tunnels per RNC/SGW limit. For full GTP protection (stateful inspection and correlation with User Plane) add a rule for corresponding IuPS-C e.g. under the EPC Reference Architectures collection.
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__RAN
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_S1MME_RANv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for S1-MME between eNB and MME
+description: Reference Architecture for 3GPP reference Point S1-MME between eNB and MME. Provides S1AP flooding Filters, IP+App-ID level protection.
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__RAN
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

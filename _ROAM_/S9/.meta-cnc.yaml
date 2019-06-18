@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_Gr_ROAMv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for Gr between SGSN and HLR accross the GRX
+description: Reference Architecture for 3GPP Reference Point Gr between legacy SGSN and HLR using an IP STP for SIGTRAN over SCTP connectivity between HSS and the groomed associations from all SGSNs. Provides IP+App-ID level protection, SCTP stateful inspection, MAP CAT1 (FS11) Type Filter and selected MAP Messages Flooding Filter.
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__ROAM
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

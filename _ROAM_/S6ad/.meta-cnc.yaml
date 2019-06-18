@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_S6_ROAMv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for S6a/d between MME/SGSN and HSS
+description: Reference Architecture for 3GPP Reference Points S6a and S6d between MME and SGSN, respectively, to HSS using a DIAMETER Agent (DEA) for SCTP connectivity between HSS and the groomed associations from all MMEs and SGSNs. Provides IP+App-ID level protection, SCTP stateful inspection, DIAMETER Message-Type Filter and DIAMETER Flooding Filter.
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__ROAM
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

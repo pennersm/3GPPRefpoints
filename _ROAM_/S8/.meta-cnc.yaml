@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_S8_ROAMv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for S8 between SGW and PGW accross the GRX
+description: Reference Architecture for 3GPP Reference Point S8 between SGW and PGW. Provides IP+App-ID level protection, GTP stateful inspection, GTP Message Type Filter and selected GTP Messages Flooding Filter.
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__ROAM
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#

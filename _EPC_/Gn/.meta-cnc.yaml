@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------
+# skillet preamble information used by panhandler
+# unique snippet name
+name: 3GPPRA_Gn_EPCv001
+# label used for menu selection
+label: 3GPP RefArch PanOS Skillet for Gn between GSNs
+description: Reference Architecture for 3GPP Reference Point Gn between SGSN and GGSN/PGW or between SGSNs during handover and relocation procedures. Provides IP+App-ID level protection, GTP stateful inspection, GTP Message Type Filtering and selected GTP Messages Flooding Filter.   
+type: panos
+extends:
+labels:
+  collection:
+    - 3GPPRefArch__EPC
+# end of preamble section
+# ---------------------------------------------------------------------
+# variables section
+#
+variables:
+#
+# ---------------------------------------------------------------------
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+#
