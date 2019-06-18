@@ -1,7 +1,0 @@
-<entry name="untrust--client">
-  <network>
-    <virtual-wire>
-      <member>ethernet1/1</member>
-    </virtual-wire>
-  </network>
-</entry>
